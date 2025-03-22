@@ -1,0 +1,59 @@
+/* CSS SELECTORS */
+/* TYPE SELECTORS */
+
+h1 {
+  font-size: 100px;
+}
+
+/*class selectors */
+.underline {
+  text-decoration: underline;
+}
+
+.red {
+  color: red;
+}
+
+/* ID selectors */
+
+#lastItem {
+  text-decoration: line-through;
+}
+
+/* CHILD SELECTORS */
+div > h2 {
+  text-shadow: 2px 2px 5px red;
+}
+
+div > p > a {
+  text-transform: uppercase;
+}
+
+/* DESCEANDANTSELECTORS */
+
+div a {
+  font-weight: bolder;
+}
+
+/* ADJACENT SIBLINGS */
+
+h3 + p {
+  font-style: italic;
+}
+
+/* General Sibling */
+h3 ~ p {
+  color: green;
+}
+
+/* ATTRIBUTE SELECTORS */
+input[required] {
+  border: 2px solid red;
+}
+
+/* ATTRIBUTE VALUE SELECTOR */
+input[type="number"] {
+  border: 2px solid green;
+}
+
+/* UNIVERSAL SELECTORS USES THE * TO SELECT ALL ELEMENTS */

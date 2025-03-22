@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+	</head>
+	<body>
+		<!-- Form -->
+		<form action="./index.html" method="get" id="sampleForm">
+			<label for="firstName">First Name:</label>
+			<input
+				type="text"
+				name="firstName"
+				id="firstName"
+				maxlength="5"
+				required
+			/>
+
+			<br /><br />
+
+			<label for="lastName">Last Name:</label>
+			<input type="text" name="lastName" id="lastName" required />
+
+			<br /><br />
+			<label for="age">Age:</label>
+			<input type="number" name="age" id="age" required />
+
+			<br /><br />
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" />
+
+			<br /><br />
+			<label for="message"></label>
+			<textarea
+				name="message"
+				id="message"
+				cols="30"
+				rows="10"
+			></textarea>
+
+			<br /><br />
+			Pizza Size:
+			<label>
+				<input type="radio" name="size" value="small" />Small
+			</label>
+			<label>
+				<input type="radio" name="size" value="medium" />Medium
+			</label>
+			<label>
+				<input type="radio" name="size" value="large" />Large
+			</label>
+
+			<br /><br />
+			<p>Pizza toppings:</p>
+			<label>
+				<input
+					type="checkbox"
+					name="toppings"
+					value="pepperoni"
+				/>Pepperoni
+			</label>
+			<label>
+				<input
+					type="checkbox"
+					name="toppings"
+					value="mushrooms"
+				/>Mushrooms
+			</label>
+			<label>
+				<input type="checkbox" name="toppings" value="bacon" />Bacon
+			</label>
+
+			<br /><br />
+
+			<select name="countryCode" id="countryCode" required>
+				<option value="">Select Option</option>
+				<option value="+91">India</option>
+				<option value="+1">Canada</option>
+				<option value="+234">Nigeria</option>
+			</select>
+
+			<br /><br />
+			<button>Sign Up</button>
+		</form>
+	</body>
+</html>
